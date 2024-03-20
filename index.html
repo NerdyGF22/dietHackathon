@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afya Bora</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="afya" type="image/x-icon">
+</head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Health Information Prompt</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Health Information</h1>
+  <div id="prompt">
+    <p>Please answer the following questions to help us personalize your experience.</p>
+    <form id="user-info">
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" required><br>
+
+      <label for="sex">Sex:</label>
+      <select id="sex" name="sex" required>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="preferNotToSay">Prefer Not to Say</option>
+      </select><br>
+
+      <h2>Medical Conditions</h2>
+      <div class="conditions">
+        <input type="checkbox" id="diabetes" name="conditions[]" value="diabetes">
+        <label for="diabetes">Diabetes</label><br>
+
+        <input type="checkbox" id="highBloodPressure" name="conditions[]" value="highBloodPressure">
+        <label for="highBloodPressure">High Blood Pressure</label><br>
+
+        <input type="checkbox" id="ulcers" name="conditions[]" value="ulcers">
+        <label for="ulcers">Ulcers</label><br>
+
+        <label for="otherCondition">Other (specify):</label>
+        <input type="text" id="otherCondition" name="otherCondition"><br>
+      </div>
+
+      <h2>Allergies</h2>
+      <div class="allergies">
+        <input type="checkbox" id="peanuts" name="allergies[]" value="peanuts">
+        <label for="peanuts">Peanuts</label><br>
+
+        <input type="checkbox" id="milk" name="allergies[]" value="milk">
+        <label for="milk">Milk</label><br>
+
+        <input type="checkbox" id="meat" name="allergies[]" value="meat">
+        <label for="meat">Meat</label><br>
+
+        <label for="otherAllergy">Other (specify):</label>
+        <input type="text" id="otherAllergy" name="otherAllergy"><br>
+      </div>
+
+      <h2>Dietary Preferences</h2>
+      <label for="diet">Are you:</label>
+      <select id="diet" name="diet">
+        <option value="none">None</option>
+        <option value="vegan">Vegan</option>
+        <option value="vegetarian">Vegetarian</option>
+      </select><br>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  <script src="firstPage.js"></script>
+</body>
+</html>
+
+<body>
+    
+</body>
+</html>
